@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- style is done here -->
+    <style>
+    .image_holder {
+        background-image: url("../assets/cloud.jpg") !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0);
+        flex-wrap: wrap;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', 'sans-serif';
+    }
+
+    form label {
+        font-size: 25px;
+        padding: 12px;
+    }
+
+    form h1 {
+        color: white;
+        font-weight: bold;
+        font-size: 35px;
+        padding: 10px;
+        margin-left: 20rem;
+    }
+
+    .form_elements {
+        height: 500px;
+        width: 900px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5) !important;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        padding: 15px;
+    }
+
+    .image_holder form {
+        flex-wrap: wrap;
+    }
+
+
+    .name-fields input {
+        width: 30%;
+        padding: 7px;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 10px;
+        background: none;
+    }
+
+    .contact-fields {
+        padding-left: 2.4rem;
+    }
+
+    .contact-fields input {
+        width: 81%;
+        padding: 7px;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 10px;
+        background: none;
+    }
+
+    .message-field {
+        padding-left: 0.7rem;
+    }
+
+    form div {
+        padding-top: 20px;
+    }
+
+    .message-field input {
+        height: 100px;
+        width: 78%;
+        padding: 7px;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 10px;
+        background: none;
+    }
+
+    .send_button {
+        background-color: rgb(51, 174, 242);
+        color: white;
+        font-size: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 15px;
+        border: 2px solid white;
+    }
+
+    .send_button:hover {
+        background-color: white;
+        color: rgb(51, 174, 242);
+        font-size: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 15px;
+        border: 2px solid rgb(51, 174, 242);
+
+    }
+
+    button {
+        margin-left: 22rem;
+        margin-top: 45px;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="image_holder">
+        <form>
+            <div class="form_elements">
+                <h1>REACH US</h1>
+                <div class="name-fields">
+                    <label for="firstname" class="email_phone">Firstname:</label>
+                    <input type="text" id="firstname" placeholder="Firstname">
+
+                    <label for="lastname">Lastname:</label>
+                    <input type="text" id="lastname" placeholder="Lastname">
+                </div>
+                <div class="contact-fields">
+                    <label for="email" class="email_phone">Email:</label>
+                    <input type="email" id="email" placeholder="Your email">
+                </div>
+                <div class="message-field">
+                    <label for="message" class="message">Message:</label>
+                    <input type="text" id="message" placeholder="Your message here!">
+                </div>
+                <button type="submit" class="send_button">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
